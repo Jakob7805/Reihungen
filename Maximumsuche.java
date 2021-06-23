@@ -141,6 +141,9 @@ public class Maximumsuche extends PApplet
                 fill(255,255,255);
                 text(namen[i], 2, 35+i*15);
                 text(""+zahlen[i], 70, 35+i*15);
+                
+                
+                
             }
         }
     }
@@ -150,16 +153,15 @@ public class Maximumsuche extends PApplet
      *
      * @return index des Maximums
      */
-    public int maximumsuche() {
-        // ------------------------------------------------------------------------------
-        // ToDO: Implementiere die Maximumsuche, füge nach jeder Veränderung der
-        //       Position des aktuellen Elements oder der Position des momentanen Maximums
-        //       die Befehle: redraw(); und delay(verzoegerung); ein.
-        //       Als Ergebnis soll die Methode die Position des Maximums zurückgeben
-        //       Kommentiere die Maximumsuche
-        // ------------------------------------------------------------------------------
-        //<>//
-        return -1;
+    public int maximumsuche(){
+        return maximumsuche_rekursiv(0, 1, zahlen);
+        
+    }
+    
+    public int maximumsuche_rekursiv(int i_max,  int i, int[] zahlen) {
+        if(i == zahlen.length) return i_max; //falls die Methode ferig ist
+        if(zahlen[i] > zahlen[i]) i_max = i;     //i_max wir bestimmt
+        return maximumsuche_rekursiv(i_max, i, zahlen); //nächste überprüfung
     }
 
     /**
