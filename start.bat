@@ -1,0 +1,1 @@
+java -Xss2g -Xmx100g Balkendiagramm_CSV.jar

